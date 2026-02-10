@@ -1,5 +1,27 @@
 #  Medical Insurance Cost Prediction
 ### *Custom Regression Suite Built using numpy*
+##  Dataset Details
+
+The dataset used for this project is the **Medical Insurance Dataset**, sourced from [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance). It consists of 1,338 individual records and provides a real-world look at how demographic and health factors drive insurance costs.
+
+### **Dataset Statistics**
+* **Total Samples:** 1,338 records
+* **Total Features:** 6 Input features + 1 Target variable
+* **Missing Values:** None (Cleaned)
+
+### **Feature Breakdown**
+| Feature | Type | Description |
+| :--- | :--- | :--- |
+| **Age** | Numerical | Age of primary beneficiary. |
+| **BMI** | Numerical | Body mass index ($kg/m^2$). |
+| **Children** | Numerical | Number of children/dependents covered. |
+| **Sex** | Categorical | Gender (Encoded: `0` / `1`). |
+| **Smoker** | Categorical | Smoking status (Encoded: `0` / `1`). |
+| **Region** | Categorical | US residential area (Encoded: `0`, `1`, `2`, `3`). |
+| **Charges** | **Target** | Individual medical costs billed by health insurance. |
+
+---
+
 
 ##  Objective
 The goal of this project is to implement, analyze, and compare various **Linear Regression** models to predict medical insurance charges. 

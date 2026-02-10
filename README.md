@@ -4,8 +4,7 @@
 ##  Objective
 The goal of this project is to implement, analyze, and compare various **Linear Regression** models to predict medical insurance charges. 
 
-> **Note:** All regression models are implemented **from scratch** using NumPy. No pre-built machine learning libraries (like scikit-learn) were used for the algorithm logic.
-
+> **Note:** regression models are implemented using NumPy.
 ---
 
 ##  Problem Statement

@@ -1,5 +1,5 @@
 #  Medical Insurance Cost Prediction
-### *Custom Regression Suite Built from Scratch*
+### *Custom Regression Suite Built using numpy*
 
 ##  Objective
 The goal of this project is to implement, analyze, and compare various **Linear Regression** models to predict medical insurance charges. 
@@ -67,8 +67,3 @@ All metrics were calculated manually using the following formulas:
 
 ---
 
-##  How to Run
-1. Clone the repository.
-2. Upload `insurance_model.ipynb` to **Google Colab**.
-3. Ensure `insurance.csv` is in the same directory.
-4. Run all cells to see the scratch implementation in action.

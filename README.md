@@ -1,127 +1,75 @@
-# Medical-Insurance-cost-prediction-using-regression
-Objective
+#  Medical Insurance Cost Prediction
+### *Custom Regression Suite Built from Scratch*
 
-The objective of this project is to implement, analyze, and compare various Linear Regression models to predict medical insurance charges based on personal and health-related attributes.
-All regression models are implemented from scratch without using any pre-built machine learning algorithms.
+##  Objective
+The goal of this project is to implement, analyze, and compare various **Linear Regression** models to predict medical insurance charges. 
 
-Problem Statement
+> **Note:** All regression models are implemented **from scratch** using NumPy. No pre-built machine learning libraries (like scikit-learn) were used for the algorithm logic.
 
-Given a dataset containing multiple input features such as age, BMI, number of children, and other attributes, the task is to predict the medical insurance cost (continuous target variable) using different linear regression techniques and evaluate their performance.
+---
 
-Dataset Description
+##  Problem Statement
+Predict medical insurance costs (`charges`) based on personal and health-related attributes. We evaluate how different techniques—from simple gradients to L1/L2 regularization—handle the variance in healthcare data.
 
-Dataset Name: Medical Insurance Dataset
+---
 
-Source: Publicly available dataset (Kaggle)
+##  Dataset Description
+* **Name:** Medical Insurance Dataset (Kaggle)
+* **Target Variable:** `charges` (Continuous)
+* **Key Features:** `age`, `bmi`, `children`, and encoded categorical variables.
+* **Status:** Cleaned; no missing values; manual numerical encoding applied.
 
-Target Variable: charges (continuous)
+---
 
-Input Features Used:
+##  Tools & Technologies
+* **Language:** Python 
+* **Platform:** Google Colab
+* **Libraries:** * `NumPy` (Math & Matrix operations)
+    * `Pandas` (Data handling)
+    * `Matplotlib` / `Seaborn` (Visualizations)
 
-age
+---
 
-bmi
+##  Methodology
+The project follows a structured lifecycle:
 
-children
+1. **Exploratory Data Analysis (EDA):** Heatmaps and distribution plots.
+2. **Simple Linear Regression:** Baseline model using a single feature.
+3. **Multiple Linear Regression:** Multi-feature model using **Gradient Descent**.
+4. **Polynomial Regression:** Capturing non-linear relationships.
+5. **Regularization:** * **Ridge (L2):** Reducing model variance.
+    * **Lasso (L1):** Feature importance and shrinkage.
+6. **Model Diagnostics:** Residual analysis and assumption validation.
 
-(optional categorical features encoded numerically)
+---
 
-The dataset contains no missing values. Categorical variables were converted into numerical form using manual encoding.
+##  Evaluation Metrics
+All metrics were calculated manually using the following formulas:
 
-Tools & Technologies Used
+| Metric | Purpose |
+| :--- | :--- |
+| **MSE** | Mean Squared Error |
+| **RMSE** | Root Mean Squared Error |
+| **R² Score** | Coefficient of Determination |
 
-Python
+---
 
-Google Colab
+##  Key Observations
+* **Age & BMI:** Show the strongest positive correlation with insurance charges.
+* **Polynomial Fit:** Significantly improved performance over standard linear paths.
+* **Regularization:** Ridge stabilized coefficients while Lasso helped in identifying the most impactful features.
 
-NumPy (numerical computation)
+---
 
-Pandas (data handling)
+##  Repository Contents
+*  `insurance_model.ipynb` – Full implementation notebook.
+*  `insurance.csv` – Raw dataset.
+*  `Plots/` – Visualization outputs.
 
-Matplotlib & Seaborn (visualization)
+---
 
-No machine learning libraries (such as sklearn) were used for model implementation.
-
-Methodology
-
-The project follows a structured approach:
-
-Part A: Exploratory Data Analysis (EDA)
-
-Dataset loading and inspection
-
-Summary statistics
-
-Feature distribution plots
-
-Correlation heatmap
-
-Part B: Simple Linear Regression
-
-Single feature used to predict insurance charges
-
-Interpretation of slope and intercept
-
-Part C: Multiple Linear Regression
-
-Multiple input features used simultaneously
-
-Model built using gradient descent
-
-Part D: Polynomial Regression
-
-Polynomial feature expansion to capture non-linear relationships
-
-Performance comparison with linear regression
-
-Part E: Regularization Techniques
-
-Ridge Regression (L2 Regularization)
-
-Lasso Regression (L1 Regularization)
-
-Analysis of coefficient shrinkage and feature importance
-
-Part F: Model Diagnostics
-
-Residual vs predicted value plots
-
-Validation of regression assumptions
-
-Evaluation Metrics
-
-The models were evaluated using:
-
-Mean Squared Error (MSE)
-
-Root Mean Squared Error (RMSE)
-
-R² Score
-
-All evaluation metrics were computed from scratch using NumPy.
-
-Key Observations
-
-Age and BMI show strong influence on insurance charges
-
-Multiple linear regression performs better than simple linear regression
-
-Polynomial regression improves model fit
-
-Ridge regression stabilizes coefficients
-
-Lasso regression helps identify less important features
-
-Conclusion
-
-This project demonstrates a complete end-to-end implementation of linear regression techniques without relying on pre-built machine learning algorithms. It provides a clear understanding of regression modeling, regularization, diagnostics, and performance evaluation.
-
-Repository Contents
-
-insurance_model.ipynb – Complete notebook with implementation
-
-insurance.csv – Dataset used
-
-README.md – Project documentation
-
-Output plots and figures
+##  How to Run
+1. Clone the repository.
+2. Upload `insurance_model.ipynb` to **Google Colab**.
+3. Ensure `insurance.csv` is in the same directory.
+4. Run all cells to see the scratch implementation in action.

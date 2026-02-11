@@ -1,5 +1,12 @@
 #  Medical Insurance Cost Prediction
 ### *Custom Regression Suite Built using numpy*
+## Team Members
+*  **Ritesh Chourasia**
+* **Pawan Kumar**
+*  **Rajdeep Ranjan**
+
+---
+
 ##  Dataset Details
 
 The dataset used for this project is the **Medical Insurance Dataset**, sourced from [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance). It consists of 1,338 individual records and provides a real-world look at how demographic and health factors drive insurance costs.

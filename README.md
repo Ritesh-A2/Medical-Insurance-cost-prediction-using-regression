@@ -89,10 +89,4 @@ All metrics were calculated manually using the following formulas:
 
 ---
 
-##  Repository Contents
-*  `insurance_model.ipynb` – Full implementation notebook.
-*  `insurance.csv` – Raw dataset.
-*  `Plots/` – Visualization outputs.
-
----
 
